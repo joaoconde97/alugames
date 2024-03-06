@@ -7,10 +7,15 @@ function alterarStatus(id) {
         imagem.classList.remove('dashboard__item__img--rented');
         botao.classList.remove('dashboard__item__button--return');
         botao.textContent = 'Alugar';
+        confirma();
     } else {
         imagem.classList.add('dashboard__item__img--rented');
         botao.classList.add('dashboard__item__button--return');
         botao.textContent = 'Devolver';
     }
     
+}
+
+function confirma() {
+    alert("Tem certeza que deseseja devolver esse jogo?")
 }
